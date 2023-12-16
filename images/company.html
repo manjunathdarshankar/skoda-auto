@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+
+    <title>Skoda</title>
+</head>
+<style>
+    h2 {
+        font-weight: bolder;
+        cursor: pointer;
+        background-color: azure;
+    }
+
+    .limited-paragraph {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 750px;
+        cursor: pointer;
+        color: gray;
+    }
+
+    .full-paragraph {
+        max-width: none;
+    }
+
+    /* .footer{
+        background-color: azure;
+    } */
+
+    .box {
+        width: 500px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        margin-right: 30px;
+        /* justify-content: space-around; */
+        border: 2px solid black;
+    }
+
+    .service1-box {
+        background-color: lightgoldenrodyellow;
+        border-radius: 25% 10%;
+        cursor: pointer;
+    }
+
+    .service2-box {
+        background-color: lightgoldenrodyellow;
+        border-radius: 25% 10%;
+        cursor: pointer;
+    }
+
+    .service3-box {
+        background-color: lightgoldenrodyellow;
+        border-radius: 25% 10%;
+        cursor: pointer;
+    }
+
+    .service4-box {
+        background-color: lightgoldenrodyellow;
+        border-radius: 25% 10%;
+        cursor: pointer;
+    }
+
+    .input-icons i {
+        position: absolute;
+    }
+
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        padding: 10px;
+        color: green;
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        color: green;
+    }
+
+    .card-img-top {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .rating {
+        color: gold;
+        text-align: center;
+    }
+
+    .unrated {
+        color: #ccc;
+    }
+</style>
+
+<body>
+    <nav style="position: relative;" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html"><img style="width: 100px;" src="Skoda-logo.webp"
+                    alt="Image not found!!!"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discover.html">Discover Skoda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">Owner's Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="company.html">Company</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br> <br>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+    <div class="container mt-5">
+        <section id="about">
+            <h2 style="text-align: center;">About Us</h2>
+            <p>Škoda Auto a.s. (Czech pronunciation: [ˈʃkoda]), often shortened to Škoda, is a Czech automobile
+                manufacturer established in 1925 as the successor to Laurin & Klement and headquartered in Mladá
+                Boleslav, Czech Republic. Škoda Works became state owned in 1948.
+                The Škoda Works was established as an arms manufacturer in 1859. It was one of the largest European
+                industrial conglomerates of the 20th century, founded by Czech engineer Emil Škoda in 1859 in Plzeň,
+                then in the Kingdom of Bohemia, Austrian Empire. It is the predecessor of today's Škoda Auto, Doosan
+                Škoda Power and Škoda Transportation companies.
+            </p>
+
+            <p>
+                After World War I, the Laurin & Klement company began producing trucks, but in 1924, after running into
+                problems and being affected by a fire on their premises, the company sought a new partner.
+
+                Meanwhile, Akciová společnost, dříve Škodovy závody (Limited Company, formerly the Škoda Works), an arms
+                manufacturer and multisector concern in Plzeň, which had become one of the largest industrial
+                enterprises in Europe and the largest in Czechoslovakia, sought to enlarge its nonarms-manufacturing
+                base, so acquired Laurin & Klement in 1925. It also started manufacturing cars in cooperation with
+                Hispano-Suiza. Most of the later production took place under Škoda's name.
+
+                Portrait
+                Engineer and industrialist Emil Škoda
+                Car logo detail
+                Škoda logo in 1930s
+                An assembly line was used for production from 1930 onwards. In the same year, a formal spin-off of the
+                car manufacture into a new company, Akciová společnost pro automobilový průmysl or abbreviated ASAP,
+                took place. ASAP remained a wholly owned subsidiary of the Škoda Works, and continued to sell cars under
+                the Škoda marque. Apart from the factory in Mladá Boleslav, it included also the firm's representation,
+                sales offices, and services, as well as a central workshop in Prague. At the time, the car factory in
+                Mladá Boleslav covered an area of 215,000 m2 and employed 3,750 blue-collar and 500 white-collar
+                workers.
+
+
+                Škoda Š 932 prototype, 1932
+                In 1932 ASAP-Škoda in Mladá Boleslav Bohemia produced a type Škoda 932 prototype of a streamlined
+                4-seater two-door car with a rear air-cooled flat-four engine designed by Karel Hrdlička and Vsevold
+                Korolkov. This car's bodywork closely resembled the small car designs yet to come.[17]
+            </p>
+            <!-- Add more content about your company -->
+        </section>
+
+        <hr class="my-4">
+
+        <section id="services">
+            <h2 style="text-align: center;">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Service </h5>
+                            <p class="card-text">At Škoda we’ve fixed the prices of our specialist servicing and
+                                maintenance. That means it’s both simple and affordable to give your
+                                Škoda the love and care it deserves right now, and down the road.
+                                Whether you choose a major service, interim service or a MOT, you can rest easy knowing
+                                the job will be carried out by a Škoda trained technician who puts great care into every
+                                single detail. Also, when it comes to that final detail, the price, there’s no nasty
+                                surprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more service cards as needed -->
+            </div>
+        </section>
+
+        <hr class="my-4">
+
+        <section id="contact">
+            <h2 style="text-align: center;">Contact Us</h2>
+            <p style="font-size: larger;">Feel free to reach out to us for any inquiries:</p>
+            <form>
+                <div class="form-group">
+                    <label for="name" style="color:purple;">Your Name</label>
+
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email" style="color:purple;">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="message" style="color:purple;">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4"
+                        placeholder="How can we assist you?"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <br> <br>
+    <div class="header-tiles">
+        <div class="row">
+            <div class="tile-1 is-non-model col-12 col-md-6"><a href="https://www.skoda-auto.co.in/news" target="_self"
+                    rel="" class="text-decoration-none undefined">
+                    <div class="tile">
+                        <div class="tile-box">
+                            <div class="row">
+                                <div class=" offset-1 col-10 offset-sm-0 col-sm-12">
+                                    <div class="tile-wrapper">
+                                        <div class="tile-wrapper-container">
+                                            <div class="image-wrapper"><object class="svg-image" type="image/svg+xml"
+                                                    data="https://cdn.skoda-auto.com/icons/sites/enmaster-v2/892a273f-f1b5-403a-92a3-968f2b1b1f9a/5bd602d14c8108356cdefeccc35947b5">Latest
+                                                    News</object></div>
+                                            <div class="content-wrapper">
+                                                <!-- <div class="headline">What's New</div> -->
+                                                <div class="subheadline">
+                                                    <div data-component="link" data-testid="component-link"><span
+                                                            class="link-element text-decoration-none light header-tile"><span
+                                                                class="link-text with-icon"><span
+                                                                    class="link-icon sf-arrow-right-after"></span></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+            <div class="tile-2 is-non-model col-12 col-md-6"><a href="https://skoda-vw.co.in/en/pages/178#careers"
+                    target="_self" rel="" class="text-decoration-none undefined">
+                    <div class="tile">
+                        <div class="tile-box">
+                            <div class="row">
+                                <div class=" offset-1 col-10 offset-sm-0 col-sm-12">
+                                    <div class="tile-wrapper">
+                                        <div class="tile-wrapper-container">
+                                            <div class="image-wrapper"><object class="svg-image" type="image/svg+xml"
+                                                    data="https://cdn.skoda-auto.com/icons/sites/enmaster-v2/3b89e65b-c1d7-4a19-9d47-9f201d6e1eb4/7447a39960fc4af9a823855d61fd8b6d">Škoda
+                                                    Career</object></div>
+                                            <div class="content-wrapper">
+                                                <div class="headline"></div>
+                                                <div class="subheadline">
+                                                    <div data-component="link" data-testid="component-link"><span
+                                                            class="link-element text-decoration-none light header-tile"><span
+                                                                class="link-text with-icon"><span
+                                                                    class="link-icon sf-arrow-right-after"></span></span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a></div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer part starts here  -->
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg> -->
+                        <h2 style="text-decoration: underline;"> &copy ŠKODA </h2>
+                        <!-- <span class=""> ŠKODA AUTO</span> -->
+
+                        <!-- <img style="width: 100px;" src="Skoda-logo.webp"  -->
+
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">Delivery of the car is subject to stock availability. <a href="">ŠKODA AUTO</a>
+                            with the help of <a href="">our contributors</a>.</li>
+                        <li class="mb-2">Specifications given differ from model to model. <a
+                                href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
+                                rel="license noopener">ŠKODA AUTO</a> <a
+                                href="https://creativecommons.org/licenses/by/3.0/" target="_blank"
+                                rel="license noopener">CC BY 3.0</a>.</li>
+                        <li class="mb-2">&copy ŠKODA AUTO a.s. 2018 - 2023</li>
+                        <li class="mb-2">Car is created with the help of computer graphics solely for the purpose of
+                            advertising<a href="https://usefathom.com/ref/ADZSBE" target="_blank"
+                                rel="noopener">Fathom</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Discover Škoda</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;" href="/">Book Škoda Online</a>
+                        </li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;" href="/docs/5.0/">Škoda - Peace
+                                of Mind</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;" href="/docs/5.0/examples/">Škoda
+                                ConnectED</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://themes.getbootstrap.com/">Škoda 4 Year Warranty</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://themes.getbootstrap.com/">Škoda Service Promise</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://blog.getbootstrap.com/">Škoda Online Booking</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://cottonbureau.com/people/bootstrap">MYŠKODA App</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="/docs/5.0/getting-started/">Latest News</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="/docs/5.0/examples/starter-template/">Škoda Career</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="/docs/5.0/getting-started/webpack/">Connectivity</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="/docs/5.0/getting-started/parcel/">Partner with Škoda</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>See all cars</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/bootstrap">Slavia</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/bootstrap/tree/v4-dev">Kushaq</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/icons">Kodiaq</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/rfs">Kushaq Monte Carlo</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/bootstrap-npm-starter">Skoda Rapid</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Owner's Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/bootstrap/issues">Book a Service</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/twbs/bootstrap/discussions">Škoda Supercare Program</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://github.com/sponsors/twbs">Service Cost Calculator</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://opencollective.com/bootstrap">Škoda Extended Warranty</a></li>
+                        <li class="mb-2"><a style="text-decoration: none; color: gray;"
+                                href="https://stackoverflow.com/questions/tagged/bootstrap-5">Škoda Owners Manual</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer ends here  -->
+
+</body>
+
+</html>
